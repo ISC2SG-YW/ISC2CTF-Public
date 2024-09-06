@@ -1,0 +1,28 @@
+services:
+  graph-theory-admin-bot:
+    image: graph-theory-admin-bot
+    container_name: graph-theory-admin-bot
+    build:
+      context: ./AdminBot
+      dockerfile: Dockerfile
+    networks:
+      - circuitous-vertex-enigma-network
+    environment:
+      ADMIN_CREDS: ${ADMIN_CREDS:-$(openssl rand -hex 32)}
+
+  graph-theory-website:
+    image: graph-theory-website
+    container_name: graph-theory-website
+    build:
+      context: ./Website
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Exposing the website on port 3000
+    networks:
+      - circuitous-vertex-enigma-network
+    environment:
+      ADMIN_CREDS: ${ADMIN_CREDS:-$(openssl rand -hex 32)}
+    
+networks:
+  circuitous-vertex-enigma-network:
+    driver: bridge

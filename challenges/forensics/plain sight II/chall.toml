@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "daksh"
+category = "forensics"
+description = "Look closely, the flag is right in front of you."
+difficulty = "medium"
+name = "plain sight II"
+files = ["dist\\SVNDMkNURnsxbl9wMWFpbl9zMWdodH0=.pdf"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{pl41n_s1ght_part2}"

@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "warri"
+category = "misc"
+description = "gatari asked me to make a crypto chall, i said no and gave him a griddle instead"
+difficulty = "easy"
+name = "griddle"
+files = ["dist/chall.py"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{i_wAs_craV1ng+mcgr1Ddl3s_whEN-i_w@s_mak1Ng-th1s_ch4ll}"

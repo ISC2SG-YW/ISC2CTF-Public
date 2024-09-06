@@ -1,0 +1,26 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "misc"
+description = "Baba has learnt his lesson from last time, so he isn't going to North Korea anymore. Unfortunately for Baba, the North Korean�s found out where he was hiding in Singapore. Determined to punish Baba for his heinous war crime of making fun of their supreme leader, they decide to drop nuclear bombs near his location.\nThankfully for Baba, he managed to avoid the nuclear bombs thanks to his brilliant anti-nuclear bomb device.\nUnfortunately for Baba, the rest of the country is not as fortunate. Baba, being the hero he is, wants to save the remaining survivors. \nCan you help Baba save as many people as possible?"
+difficulty = "medium"
+name = "Kaboom"
+files = ["dist\\Kaboom.docx"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{B4B4_lOVe5_dPdPdpdpDpDPDPdp}"
+
+[[challenge.services]]
+name = "kaboom"
+path = "service\\Kaboom Service"
+port = 323
+type = "nc"
+
+[challenge.services.extras]

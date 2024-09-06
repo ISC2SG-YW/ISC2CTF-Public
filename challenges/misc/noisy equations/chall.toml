@@ -1,0 +1,26 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "dalberrt"
+category = "misc"
+description = "a bird went caw caw caw caw and my equations became noisy :(\ncan you still solve 49 of them?\n\nPOST Requests -> /answer"
+difficulty = "medium"
+name = "noisy equations"
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{d3n01sing_r41nb0w_no1s3_1s_4_gRE4t_1d34}"
+case_sensitive = false
+
+[[challenge.services]]
+name = "noisyequations"
+path = "service\\dockerstuff"
+port = 5000
+type = "web"
+
+[challenge.services.extras]

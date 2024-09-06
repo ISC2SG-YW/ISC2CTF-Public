@@ -1,0 +1,26 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "warri"
+category = "crypto"
+description = "this dusty radio doth work still! a flag resides within, if thou beat its authenticator ere the time is up"
+difficulty = "medium"
+name = "ye olde radio"
+files = ["dist/app.py"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{this_is_why_google_authenticator_doesnt_do_challenge_response_rsa}"
+
+[[challenge.services]]
+name = "ye_olde_radio"
+path = "service/ye_olde_radio"
+port = 1337
+type = "nc"
+
+[challenge.services.extras]

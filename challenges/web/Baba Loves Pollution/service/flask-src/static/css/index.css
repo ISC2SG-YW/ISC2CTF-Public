@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background:#6F634B;
+    color:#FFFFFF;
+}
+.hero{
+    height:100vh;
+    background-image: url('../images/hero_background.png');
+    background-size: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#7A745D;
+}
+
+.hero h1{
+    width:7em;
+    height:3em;
+    font-size: 5em;
+    text-align: center;
+    background-image: url('../images/title_bubble.png');
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height:100vh;
+    gap: 1em;
+}
+.content h2{
+    font-size: 2.5em;
+    background-image: url("../images/header_bubble.png");
+    width: 15em;
+    height: 2em;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#7A745D;
+    flex-shrink: 0;
+}
+
+.content p{
+    font-size: 2em;
+    text-align: center;
+    width:25em;
+}
+
+.content img{
+    flex-shrink: 2;
+    height:20em;
+
+}
+
+.default_button{
+    background:#D9D9D9;
+    color:#000000;
+    border:none;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em 2em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    cursor:pointer;
+}
+
+.default_button:hover{
+    filter: brightness(0.8);
+}
+.contribution{
+    width:15em;
+    height:6em;
+    font-size: 2.5em;
+    text-align: center;
+    background-image: url('../images/title_bubble.png');
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#7A745D;
+}
+
+.total{
+    font-size: 2.5em;
+    background-image: url("../images/bubble_2.png");
+    width: 20em;
+    height: 6em;
+    padding:1em;
+    box-sizing: border-box;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#7A745D;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+b{
+    color:#FBD284;
+}

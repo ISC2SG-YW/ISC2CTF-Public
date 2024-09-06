@@ -6,3 +6,16 @@
 - **Category:** reverse
 - **Difficulty:** easy
 
+
+## Hints
+None
+
+## Files
+- [flag.txt](dist\flag.txt)
+- [OOO00O0OOO0.py](dist\OOO00O0OOO0.py)
+
+## Flags
+- `ISC2CTF{d3OO00OO0o0OobfuSc4t!ng_pYtho00Oo0On_l1ke_4_prO0oOOo}` (static)
+
+## Services
+None

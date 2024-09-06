@@ -1,0 +1,28 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "gatari"
+category = "pwn"
+description = "silly elmo wanted to write a login portal in C, but i guess LLMs don't write the best code"
+difficulty = "easy"
+name = "elmos portal"
+files = ["dist/elmos_portal.zip"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{wHy_C4n7_!_USE_63ts_!N_pRODUCt!oN}"
+case_sensitive = false
+
+[[challenge.services]]
+name = "elmos_portal"
+path = "service/elmos_portal"
+port = 5000
+type = "nc"
+
+[challenge.services.extras]
+privileged = true

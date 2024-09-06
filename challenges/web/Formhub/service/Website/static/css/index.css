@@ -1,0 +1,38 @@
+.about{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:2em 5em;
+    height:100vh;
+    font-size:1.5em;
+    padding:3em 3em;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about_image{
+    background:white;
+    width:80%;
+    aspect-ratio: 2/1;
+}
+
+.highlight{
+    color: #FFAE12;
+}
+
+.signup{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:1em;
+    font-size: 1.5em;
+    margin: 2em 0
+}
+
+.about_image{
+    object-fit: contain;
+    background:transparent
+}

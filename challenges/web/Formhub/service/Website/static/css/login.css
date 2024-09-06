@@ -1,0 +1,22 @@
+.inputs>input{
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.inputs>button{
+    font-size:1.2em
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    width:60%
+}

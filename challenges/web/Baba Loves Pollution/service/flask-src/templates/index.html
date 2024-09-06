@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baba Loves Pollution</title>
+        <link rel = "stylesheet" href = "{{url_for('static',filename = 'css/index.css')}}">
+    </head>
+    <body>
+        <section class = "hero">
+            <h1>
+                Pollution
+            </h1>
+        </section>
+        <section class = "content">
+            <h2>Why is Pollution Good?</h2>
+            <img src = "{{url_for('static',filename = 'images/pollution.jpg')}}" alt = "Pollution">
+            <p>
+                Pollution helps worsen the health of people, <b>decreasing</b> the <b>average lifespan of humans</b>, reducing the impact of <b>overpopulation</b> in society
+            </p>
+        </section>
+        <section class = "content">
+            <h2>Want to help pollute?</h2>
+            <p>
+                Throw <b>straws</b> at local turtles, set your local recyling plant on fire! Do <b>your</b> part in making the world a better place!
+            </p>
+            <button type = "submit" class = "default_button" id = "pollute">
+                I've Polluted!
+            </button>
+        </section>
+        <section class = "content"> 
+            <h3 class = "contribution">
+                You've contibuted {{pollution}}kg to the environment!
+            </h3>
+            <h3 class = "total">
+                The world has contibuted {{total_pollution}}kg to the environment!
+            </h3>
+        </section>
+        <script src = "{{url_for('static',filename='js/index.js')}}"></script>
+    </body>
+</html>

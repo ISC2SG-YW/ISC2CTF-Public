@@ -5,3 +5,17 @@ Did you know that Python's Random module uses the Mersenne Twister as its genera
 - **Author:** warri
 - **Category:** crypto
 - **Difficulty:** hard
+
+
+## Hints
+None
+
+## Files
+- [chall.py](dist\chall.py)
+- [out.txt](dist\out.txt)
+
+## Flags
+- `ISC2CTF{dOnt_u5e_t0o_sm4l1_chUnks_wHen_h4sH1nG!}` (static)
+
+## Services
+None

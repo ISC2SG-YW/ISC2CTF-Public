@@ -1,0 +1,35 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "web"
+description = "Baba does a form every single day, but need other people to help him fill in forms for him! So, he created a simple website to spread forms to everyone!"
+difficulty = "medium"
+name = "Formhub"
+files = ["dist\\Formhub Distri.zip"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{b@ba_l0VEs_f0rM_ON_X$$_4Nd_5Q11}"
+case_sensitive = false
+
+[[challenge.services]]
+name = "formhub-website"
+path = "service\\Website"
+port = 5000
+type = "web"
+
+[challenge.services.extras]
+
+[[challenge.services]]
+name = "formhub-admin-bot"
+path = "service\\AdminBot"
+port = 420
+type = "internal"
+
+[challenge.services.extras]

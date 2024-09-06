@@ -7,5 +7,15 @@ surely its still somewhere in this memdump
 - **Category:** forensics
 - **Difficulty:** easy
 
+
+## Hints
+None
+
 ## Files
 - https://drive.google.com/file/d/1ZvF_gV0MfjPCYXGdbSbjUtoRSTSpNikq/view?usp=sharing
+
+## Flags
+- `ISC2CTF{i_10v3_m3M0rY_dvMpzz}` (static)
+
+## Services
+None

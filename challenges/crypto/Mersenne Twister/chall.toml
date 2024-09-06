@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "warri"
+category = "crypto"
+description = "Did you know that Python's Random module uses the Mersenne Twister as its generator, with period of 2^19937 - 1? Let's see if you can solve this challenge which uses Python's Random module!"
+difficulty = "hard"
+name = "Mersenne Twister"
+files = ["dist/chall.py", "dist/out.txt"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{dOnt_u5e_t0o_sm4l1_chUnks_wHen_h4sH1nG!}"

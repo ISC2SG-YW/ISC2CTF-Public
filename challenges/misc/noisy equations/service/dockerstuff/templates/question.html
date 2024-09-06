@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <script>
+        // Automatically submit the form after 5 seconds
+        setTimeout(function() {
+            document.getElementById('autoSubmit').submit();
+        }, 5000);
+    </script>
+</head>
+<body>
+    <h1>Math Quiz! Score 49 points</h1>
+    <p>Your score: {{ session['score'] }}</p>
+    
+    <img src="{{ url_for('serve_image', filename=question_id + '.png') }}" alt="Question Image">
+    
+    <form id="autoSubmit" action="{{ url_for('answer') }}" method="post">
+        <label for="answer">Your answer:</label>
+        <input type="text" id="answer" name="answer" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  php:
+    container_name: baba-loves-pollution-server
+    build:
+      context: ./php-src
+      dockerfile: Dockerfile
+    networks:
+      - babalovespollution-network
+
+  flask:
+    container_name: baba-loves-pollution-app
+    build:
+      context: ./flask-src
+      dockerfile: Dockerfile
+    ports:
+      - "9001:5000"
+    networks:
+      - babalovespollution-network
+
+networks:
+  babalovespollution-network:
+    driver: bridge

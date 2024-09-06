@@ -9,3 +9,17 @@ Can you help Baba save as many people as possible?
 - **Category:** misc
 - **Difficulty:** medium
 
+
+## Hints
+None
+
+## Files
+- [Kaboom.docx](dist\Kaboom.docx)
+
+## Flags
+- `ISC2CTF{B4B4_lOVe5_dPdPdpdpDpDPDPdp}` (static)
+
+## Services
+| Service | Port | Type |
+| ------- | ---- | ---- |
+| [`kaboom`](service\Kaboom Service) | 323 | nc |

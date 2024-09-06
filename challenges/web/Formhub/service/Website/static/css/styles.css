@@ -1,0 +1,70 @@
+body{
+    background:#1B1B1B;
+    color:white;
+    font-family: Inter;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    gap:2em;
+    align-items: center;
+}
+
+.logo{
+    font-size:5em;
+}
+
+.subtext{
+    color:#CDEEFF;
+}
+
+.logo_decor{
+    background:#FFAE12;
+    padding:0.1em 0.5em;
+    border-radius:0.2em;
+    color:#1B1B1B;
+}
+h1,h2,p,h3{
+    margin:0;
+}
+
+.button__default{
+    background:#FFAE12;
+    color:#1B1B1B;
+    padding:0.5em 1em;
+    font-size: 1em;
+    font-family: Inter;
+    font-weight: bold;
+    border:none;
+    border-radius:0.5em;
+}
+
+.button__special{
+    background:transparent;
+    padding:0.5em 1em;
+    font-size: 1em;
+    font-family: Inter;
+    font-weight: bold;
+    border:5px solid #FFAE12;
+    border-radius:0.5em;
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+a{
+    color:#CDEEFF;
+}
+
+.subtext_unbold{
+    color:#CDEEFF;
+    font-weight: 300;
+}
+
+button:hover{
+    cursor:pointer;
+    filter: brightness(0.8);
+}

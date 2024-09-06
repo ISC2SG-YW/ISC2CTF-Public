@@ -1,0 +1,28 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "gatari"
+category = "pwn"
+description = "elmo finally got the chance to work on his login portal. same vuln, same elmo; but with pop rdi?? what's that"
+difficulty = "easy"
+name = "elmos despair"
+files = ["dist/elmos_despair.zip"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{elmo_d0esn7_Kn0w_X86-64_cal1in9_cOnventi0N$}"
+case_sensitive = false
+
+[[challenge.services]]
+name = "elmos_despair"
+path = "service/elmos_despair"
+port = 5000
+type = "nc"
+
+[challenge.services.extras]
+privileged = true

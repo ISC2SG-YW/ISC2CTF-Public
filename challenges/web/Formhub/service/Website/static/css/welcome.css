@@ -1,0 +1,18 @@
+.action{
+    font-size:1.5em;
+    display:flex;
+    gap:2em;
+    flex-direction: row;
+}
+
+.action button{
+    width:10em;
+    border-radius: 2em;
+    height:100%;
+}
+
+.welcome{
+    display:flex;
+    flex-direction: column;
+    gap:0.5em;
+}

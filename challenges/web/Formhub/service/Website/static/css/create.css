@@ -1,0 +1,29 @@
+form>input, form>textarea{
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Inter;
+}
+
+form>button{
+    font-size:1.2em
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    width:60%;
+    margin:auto;
+    height:100vh;
+}
+
+.desc{
+    height:15em;
+}

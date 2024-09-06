@@ -1,0 +1,23 @@
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "misc"
+description = "Baba went to visit the glorious nation of North Korea! However, while there, he got very lost. Now the North Korean officials are after him, because of the several war crimes he has committed in the country. He needs to navigate his way back to Singapore, but he doesn�t remember where it is! Thankfully, he has a GPS, which he can use to determine the direction Singapore is in. Can you help Baba find Singapore?"
+difficulty = "easy"
+name = "Baba is lost"
+files = ["dist\\challenge.docx"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{Ba8@_l0VeS_b1N4ry_5earcH}"
+case_sensitive = false
+
+[[challenge.services]]
+name = "baba-is-lost"
+path = "service\\Baba is lost Service"
+port = 12345
+type = "nc"
+
+[challenge.services.extras]

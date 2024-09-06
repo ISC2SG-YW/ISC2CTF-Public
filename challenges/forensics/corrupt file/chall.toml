@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "dalberrt"
+category = "forensics"
+description = "i took a picture of a cat but it turned out corrupted :("
+difficulty = "easy"
+name = "corrupt file"
+files = ["dist\\corrupted"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{f1Le_s1gN@tur3s_y@y}"

@@ -8,5 +8,15 @@ Zip Password: ISC2CTFForensicsChallengezAqWsXcDe
 - **Category:** forensics
 - **Difficulty:** medium
 
+
+## Hints
+None
+
 ## Files
 - https://drive.google.com/file/d/1mPuYAwxObMAj2mZ3AAUUiZMLf7JAdRqQ/view?usp=sharing
+
+## Flags
+- `ISC2CTF{l1nUx_w0u1dNt_h@v_diS_isSu3}` (static)
+
+## Services
+None

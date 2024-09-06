@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static/css/index.css?<?php echo time()?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" href="static/imgs/wheretoeatIcon.ico">
+    <title>EAT WHERE LEH?</title>
+</head>
+<body>
+    <div class = "contents">
+        
+        <div class = "deco2"></div>
+        <div class = "deco1"></div>
+        <div class = "deco3"></div>
+        <div class = "deco4"></div>
+        
+        <h1 class = "title">EAT WHERE LEH?<img src = "static/imgs/wheretoeatIcon.png" class="icon" alt = "eatwhereleh icon"></h1>
+        <p class = "desc">Select your filter options, and Randomise. It's that easy.</p>
+        <div class = "filter_div">
+            <button class = "filter_options filter_restaurant">Restaurants</button>
+            <button class = "filter_options filter_mall">Mall</button>
+            <button class = "filter_options filter_type">Type</button>
+            <button class = "filter_options filter_price">Price</button>
+        </div>
+        <div class = "action_btn_div">
+            <button class = "action_btn randomise">Randomise</button>
+            <button class = "action_btn remove">Remove from List</button>
+        </div>
+        <div class = "error">No Restaurants Fit Current List</div>
+        <div class = "restaurant-info">
+            <h2 class = "restaurant-name slideLeft" style = "--delay:0s" ><span></span> <input class = "report_btn" type = "button" value = "Report Issue"></h2>
+            <img class = "restaurant-img slideLeft" style = "--delay:0.1s">
+            <p class = "restaurant-mall slideRight" style = "--delay:0.1s">Mall: <span></span></p>
+            <p class = "restaurant-type slideRight" style = "--delay:0.2s">Type: <span></span></p>
+            <p class = "restaurant-price slideRight" style = "--delay:0.3s">Price: <span></span></p>
+            <div class = "contains-desc slideRight" style = "--delay:0.4s">
+                <p class = "restaurant-desc" ></p>
+                <div  class = "show"></div>
+            </div>
+            
+            <div class = "restaurant-buttons slideUp" style = "--delay:0.5s">
+                <button class = "visit">Visit Directory</button>
+                <button class = "visit web">Visit Website</button>
+            </div>
+            
+        </div>
+        <label hidden>Flag Part 1: ISC2CTF{nOm</label>
+        <label hidden>Who needs frameworks when you have good old plain css</label>
+    </div>
+
+    <div class = 'select_options'>
+        <div class = "mall_option">Jurong Point</div>
+    </div>
+    <script src = "static/js/defaults.js?<?php echo time()?>"></script>
+    <script src = "static/js/rollShop.js?<?php echo time()?>"></script>
+    <script src = "static/js/index.js?<?php echo time()?>"></script>
+    
+</body>
+
+</html>

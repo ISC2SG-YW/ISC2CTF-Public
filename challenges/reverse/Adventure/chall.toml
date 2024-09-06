@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "David"
+category = "reverse"
+description = "David went on his first adventure, but picked up gems that messed up his backpack along the way. Can you recover his backpack?"
+difficulty = "easy"
+name = "Adventure"
+files = ["dist/adventure_chall.py", "dist/output.txt"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{g3m_p1ck1n9_4Dv3n7Ur3_h1oqu53bia}"

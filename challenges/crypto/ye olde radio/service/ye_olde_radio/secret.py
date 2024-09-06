@@ -1,0 +1,1 @@
+FLAG = 'ISC2CTF{this_is_why_google_authenticator_doesnt_do_challenge_response_rsa}'

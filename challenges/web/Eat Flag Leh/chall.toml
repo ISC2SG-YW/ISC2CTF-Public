@@ -1,0 +1,25 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "web"
+description = "Baba got tired of his friends not knowing where to eat, so he made a website just for that. His friends kept trying to eat his flags though, instead of the food, so Baba masterfully hid them! Can you find the flag?"
+difficulty = "easy"
+name = "Eat Flag Leh"
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{nOm_Nom_f1a9_Is_YUM__36Tg,)3*d9<*}"
+
+[[challenge.services]]
+name = "nginx"
+path = "service/service"
+port = 80
+type = "web"
+
+[challenge.services.extras]

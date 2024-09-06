@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Formhub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "{{url_for('static',filename='css/styles.css')}}">
+    <link rel = "stylesheet" href = "{{url_for('static',filename='css/forms.css')}}">
+    <script src = "{{url_for('static',filename = 'js/report.js')}}"></script>
+</head>
+<body>
+    <section class = "hero">
+        <h1 class = "logo">
+            Form 
+            <span class = "logo_decor">
+                hub
+            </span>
+        </h1>
+        <h2 class = "subtext">Enjoy DOING other Forms here!</h2>
+    </section>
+    <section class = "forms">
+        {% for form in forms %}
+            <div class = "form">
+                <h3 class = "form_title" style = "grid-area:title">{{form[1]}}</h3>
+                <h3 class = "form_creator" style = "grid-area:creator;text-align: right;">By {{form[4]}}</h3>
+                <p class = "form_description" style = "grid-area:description">{{form[2]}}</p>
+                <div style = "grid-area:action">
+                    <a href = "{{form[3]}}"><button class = "button__default">Visit Form</button></a>
+                    <button class = "button__default report"
+                        onclick = "report('http:\/\/formhub-website:5000'+'{{url_for('forms',formId = form[0])}}')">Report</button>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</body>

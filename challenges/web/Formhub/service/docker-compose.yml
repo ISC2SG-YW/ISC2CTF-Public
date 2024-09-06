@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  formhub-admin-bot:
+    container_name: formhub-admin-bot
+    build:
+      context: ./AdminBot
+      dockerfile: Dockerfile
+    networks:
+      - formhub-network
+
+  formhub-website:
+    container_name: formhub-website
+    build:
+      context: ./Website
+      dockerfile: Dockerfile
+    ports:
+      - "9003:5000"  # Exposing the website on port 5000
+    networks:
+      - formhub-network
+
+networks:
+  formhub-network:
+    driver: bridge

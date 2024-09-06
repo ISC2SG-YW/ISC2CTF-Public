@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Formhub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "{{url_for('static',filename='css/styles.css')}}">
+    <link rel = "stylesheet" href = "{{url_for('static',filename='css/index.css')}}">
+</head>
+<body>
+    <section class = "hero">
+        <h1 class = "logo">
+            Form 
+            <span class = "logo_decor">
+                hub
+            </span>
+        </h1>
+        <h2 class = "subtext">BY Kids, FOR Kids</h2>
+    </section>
+    <section class = "about">
+        <p style = "text-align: right;">Easily share your <br><b class = "highlight">THICK, JUICY</b> forms <br>to your <b class = "highlight">FANS</b></p>
+        <div style = 'display:flex;justify-content: left;'>
+        <img class = "about_image" src = "{{url_for('static',filename='images/about1.PNG')}}">
+    </div>
+    <div style = "display:flex;justify-content: right;">
+        <img class = "about_image" style = "justify-content: right" src = "{{url_for('static',filename='images/about2.PNG')}}">
+    </div>
+        <p>Find a <b class = "highlight">NAUGHTY</b> form? Don't be afraid to flag it! Our <b class = "highlight">SINGLE</b> admin will check it out for you!</p>
+    </section>
+    <section class = "signup">
+        <div>
+        <p><b>Don't miss out on the <span class = "highlight">FUN</span></b></p>
+        <p>Join 2 users and <b>signup</b> today!</p>
+    </div>
+        <a href = "{{url_for('signup')}}">
+            <button class = "button__default">Sign up</button>
+        </a>
+    </section>
+</body>

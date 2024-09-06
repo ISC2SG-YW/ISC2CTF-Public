@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Formhub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "{{url_for('static',filename='css/styles.css')}}">
+    <link rel = "stylesheet" href = "{{url_for('static',filename='css/welcome.css')}}">
+</head>
+<body>
+    <section class = "hero">
+        <h1 class = "logo">
+            Form 
+            <span class = "logo_decor">
+                hub
+            </span>
+        </h1>
+        <div class = "welcome">
+            <h2 class = "subtext" style = "text-align: center;">WelCOME {{username | safe}}</h2>
+            <h3 class = "subtext_unbold">What would you like to do today?</h3>
+        </div>
+        <div class = "action">
+            <a href = "{{url_for('create_form')}}"><button class = "button__default">Create Form</button></a> 
+            <a href = "{{url_for('forms')}}"><button class = "button__special">View Form</button></a> 
+        </div>
+    </section>
+    
+</body>

@@ -8,3 +8,18 @@ POST Requests -> /answer
 - **Author:** dalberrt
 - **Category:** misc
 - **Difficulty:** medium
+
+
+## Hints
+None
+
+## Files
+None
+
+## Flags
+- `ISC2CTF{d3n01sing_r41nb0w_no1s3_1s_4_gRE4t_1d34}` (static)
+
+## Services
+| Service | Port | Type |
+| ------- | ---- | ---- |
+| [`noisyequations`](service\dockerstuff) | 5000 | web |

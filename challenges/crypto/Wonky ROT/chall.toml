@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "David"
+category = "crypto"
+description = "My ROT is a bit wonky but it still does the job :D"
+difficulty = "easy"
+name = "Wonky ROT"
+files = ["dist/Wonky_ROT_chall.py"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{w0nky_R0T_on1y_rot4t1ng_byt3_by_byt3}"

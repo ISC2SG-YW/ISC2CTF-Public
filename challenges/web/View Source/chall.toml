@@ -1,0 +1,25 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "web"
+description = "Baba hates blind web challenges! He loves reading code, and wants other people to read code as well. So, he crafted this website to share his love!\n\nThere are some bugs that Baba is still working on fixing, but he trusts that his coding abilities are decent enough to not have accidentally created a major vulnerability in his website.\nCan you prove how bad of a programmer Baba is?\n\u0004"
+difficulty = "easy"
+name = "View Source"
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{i_l0V3_$oUrCE_Code_S$T!_!s_50_fUn!}"
+
+[[challenge.services]]
+name = "ViewSource"
+path = "service\\View Source Service"
+port = 5000
+type = "web"
+
+[challenge.services.extras]

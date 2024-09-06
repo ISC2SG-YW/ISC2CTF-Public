@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Ravin"
+category = "forensics"
+description = "I was given this picture by my friend travelling overseas... Seems like he was so hungry he bit a part of the plane off"
+difficulty = "easy"
+name = "Gobbling Planes"
+files = ["dist/SVNDMkNURntmNGtFX2ZMNGd9.jpg"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{Pl4n3s_4r3_b31ng_b1tt3n}"

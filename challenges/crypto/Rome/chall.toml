@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "warri"
+category = "crypto"
+description = "I was told AES (Advanced Encryption Standard) is super secure, and I like Ancient Rome. This should be secure, right?"
+difficulty = "easy"
+name = "Rome"
+files = ["dist/chall.py"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{eT_tu_brut3}"

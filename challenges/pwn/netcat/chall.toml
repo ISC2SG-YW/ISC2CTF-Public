@@ -1,0 +1,27 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "gatari"
+category = "pwn"
+description = "Pwn challenges typically listen on a port, try to connect to it"
+difficulty = "easy"
+name = "netcat"
+files = ["dist/vuln.c"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{neTc@t_IS_PREtTy_Us3fu1}"
+
+[[challenge.services]]
+name = "netcat"
+path = "service/netcat"
+port = 5000
+type = "nc"
+
+[challenge.services.extras]
+privileged = true

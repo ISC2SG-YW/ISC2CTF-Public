@@ -1,0 +1,34 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "web"
+description = "Baba loves polluting the environment so much! Everyday, he throws straws into the Ocean, he burns orphanages simply to contribute to the environmental pollution, and even takes showers of more than 25 hours a day simply to spite the children in Africa! \n\nIn fact, he loves pollution so much that he even made a website to advertise his ideals. He has a high score of 29999kg of pollution. Do you think you can beat his high score?"
+difficulty = "easy"
+name = "Baba Loves Pollution!"
+files = ["dist\\Baba Loves Pollution Distri.zip"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{!_lOve_pOlLuTIoN_$0_MuCH!}"
+
+[[challenge.services]]
+name = "flask"
+path = "service\\flask-src"
+port = 5000
+type = "web"
+
+[challenge.services.extras]
+
+[[challenge.services]]
+name = "php"
+path = "service\\php-src"
+port = 483
+type = "internal"
+
+[challenge.services.extras]

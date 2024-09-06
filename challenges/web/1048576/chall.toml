@@ -1,0 +1,27 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "web"
+description = "Baba got too good at 2048, so he decided to create his own 2048 game. Can you beat his high score?"
+difficulty = "medium"
+name = "1048576"
+files = ["dist/1048576 Distri.zip"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{I_4M_50_9ood_47_5UdoKu}"
+case_sensitive = false
+
+[[challenge.services]]
+name = "1048576"
+path = "service/1048576 Service"
+port = 3000
+type = "web"
+
+[challenge.services.extras]

@@ -6,3 +6,17 @@ Baba got tired of his friends not knowing where to eat, so he made a website jus
 - **Category:** web
 - **Difficulty:** easy
 
+
+## Hints
+None
+
+## Files
+None
+
+## Flags
+- `ISC2CTF{nOm_Nom_f1a9_Is_YUM__36Tg,)3*d9<*}` (static)
+
+## Services
+| Service | Port | Type |
+| ------- | ---- | ---- |
+| [`nginx`](service\service) | 80 | web |

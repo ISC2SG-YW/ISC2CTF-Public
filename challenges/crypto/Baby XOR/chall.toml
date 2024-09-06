@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "David"
+category = "crypto"
+description = "My encrypted flag is dependent on the seed. Can you figure out what seed I used?"
+difficulty = "easy"
+name = "Baby XOR"
+files = ["dist/baby_xor_chall.py"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{n3v3r_r3v3al_ur_s33d5}"

@@ -6,3 +6,15 @@ Oh no! Someone swapped two vital lines of code in my program and my binary's now
 - **Category:** reverse
 - **Difficulty:** easy
 
+
+## Hints
+None
+
+## Files
+- [faulty_binary](dist\faulty_binary)
+
+## Flags
+- `ISC2CTF{static_analysis_orz}` (static)
+
+## Services
+None

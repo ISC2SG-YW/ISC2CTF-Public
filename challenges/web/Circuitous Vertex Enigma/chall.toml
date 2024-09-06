@@ -1,0 +1,34 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "Zhongbob"
+category = "web"
+description = "Baba just finished making some shitty competitive programming questions for this competition called ISC2CTF or something. After creating these challenges, he had some traumatic flashbacks of when he only got Silver for the national olympaid of informatics or something.\nWanting to improve his graph theory skills so he can compete next year when he retains, he's asking for YOUR help to help teach him what graph theory is about!\n\nPS. Competitive Programming questions can be found in misc :D"
+difficulty = "hard"
+name = "Circuitous Vertex Enigma"
+files = ["dist\\Circuitous Vertex Enigma Distri.zip"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{848@_HA735_GR4pH_7h30rY_:c}"
+
+[[challenge.services]]
+name = "graph-theory-admin-bot"
+path = "service\\AdminBot"
+port = 12345
+type = "internal"
+
+[challenge.services.extras]
+
+[[challenge.services]]
+name = "graph-theory-website"
+path = "service\\Website"
+port = 3000
+type = "web"
+
+[challenge.services.extras]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-chartjs@3.5.1/dist/vue-chartjs.min.js"></script>
+    <script src="{{url_for('static',filename='Collection-6.7.10/collection.js')}}"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/index.css">
+  </head>
+  <body>
+    <!-- Main App Container -->
+    <div id="main-app">
+      <section class = 'graph'>
+        <h2>Send Baba your own graph!</h2>
+        <scatter-plot></scatter-plot>
+        <p>Add a point by clicking on the graph!</p>
+        <button id = "send">Send Baba!</button>
+      </section>
+
+    </div>
+    <script>
+      var data = {{points|tojson}};
+      var send_baba = "{{url_for('send_baba')}}";
+    </script>
+    <script src = "{{url_for('static',filename='js/create.js')}}">
+
+    </script>
+  </body>
+  </html>
+  

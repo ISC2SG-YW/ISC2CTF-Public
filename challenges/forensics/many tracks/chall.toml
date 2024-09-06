@@ -1,0 +1,18 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "dalberrt"
+category = "forensics"
+description = "wow there's so many tracks for this video, english or spanish or chinese???"
+difficulty = "easy"
+name = "many tracks"
+files = ["dist/tracksssssssssssss.mp4"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{s0_m@nY_d1fF3rENt_sUbt1TL3z}"

@@ -1,0 +1,27 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "warri"
+category = "pwn"
+description = "Friends of Gatari presents...EchoChamber! State of the art super secure enclosed space where there is only you, your voice, and your echoes! GET this private environment for a small price of $10.58! "
+difficulty = "hard"
+name = "EchoChamber"
+files = ["dist/chall", "dist/Dockerfile", "dist/libc.so.6", "dist/ld-linux-x86-64.so.2", "dist/chall.cpp"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{format_arbitrary_readwrite_into_got_into_stackleak_into_ret2libc...ur_a_pro_pwnner!}"
+
+[[challenge.services]]
+name = "echochamber"
+path = "service/echochamber"
+port = 5000
+type = "nc"
+
+[challenge.services.extras]
+privileged = true

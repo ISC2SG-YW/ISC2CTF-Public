@@ -1,0 +1,174 @@
+networks:
+  1048576-network: {}
+  babaislost-network: {}
+  eatflagleh-network: {}
+  echochamber-network: {}
+  elmosdespair-network: {}
+  elmosportal-network: {}
+  elmosworld-network: {}
+  jigroppuzzle-network: {}
+  netcat-network: {}
+  noisyequations-network: {}
+  viewsource-network: {}
+  yeolderadio-network: {}
+  kaboom-network: {}
+
+include:
+  - challenges/web/Baba Loves Pollution/service/docker-compose.yml
+  - challenges/web/Formhub/service/docker-compose.yml
+  - challenges/web/Circuitous Vertex Enigma/service/docker-compose.yml
+
+services:
+  '1048576':
+    build: challenges/web/1048576/service/1048576 Service
+    container_name: '1048576'
+    networks:
+    - 1048576-network
+    ports:
+    - 9000:3000
+    restart: always
+  ViewSource:
+    image: isc2ctf-viewsource # why must I do this
+    build: challenges/web/View Source/service/View Source Service
+    container_name: ViewSource
+    networks:
+    - viewsource-network
+    ports:
+    - 9005:5000
+    restart: always
+  baba-is-lost:
+    build: challenges/misc/Baba is lost/service/Baba is lost Service
+    container_name: baba-is-lost
+    networks:
+    - babaislost-network
+    ports:
+    - 8000:12345
+    restart: always
+  echochamber:
+    build: challenges/pwn/EchoChamber/service/echochamber
+    container_name: echochamber
+    networks:
+    - echochamber-network
+    ports:
+    - 11000:5000
+    privileged: true
+    restart: always
+  elmos_despair:
+    build: challenges/pwn/elmos despair/service/elmos_despair
+    container_name: elmos_despair
+    networks:
+    - elmosdespair-network
+    ports:
+    - 11001:5000
+    privileged: true
+    restart: always
+  elmos_portal:
+    build: challenges/pwn/elmos portal/service/elmos_portal
+    container_name: elmos_portal
+    networks:
+    - elmosportal-network
+    ports:
+    - 11002:5000
+    privileged: true
+    restart: always
+  elmos_world:
+    build: challenges/pwn/elmos world/service/elmos_world
+    container_name: elmos_world
+    networks:
+    - elmosworld-network
+    ports:
+    - 11003:5000
+    privileged: true
+    restart: always
+
+  # flask:
+  #   container_name: flask
+  #   extends:
+  #     file: challenges/web/Baba Loves Pollution/service/docker-compose.yml
+  #     service: flask
+  #   networks:
+  #   - babalovespollution-network
+  #   ports:
+  #   - 9001:5000
+  #   restart: always
+
+  # formhub-admin-bot:
+  #   container_name: formhub-admin-bot
+  #   extends:
+  #     file: challenges/web/Formhub/service/docker-compose.yml
+  #     service: formhub-admin-bot
+  #   networks:
+  #   - formhub-network
+  #   restart: always
+  # formhub-website:
+  #   container_name: formhub-website
+  #   extends:
+  #     file: challenges/web/Formhub/service/docker-compose.yml
+  #     service: formhub-website
+  #   networks:
+  #   - formhub-network
+  #   ports:
+  #   - 9003:5000
+  #   restart: always
+
+  jigrop-puzzle:
+    build: challenges/pwn/jigrop puzzle/service/jigrop-puzzle
+    container_name: jigrop-puzzle
+    networks:
+    - jigroppuzzle-network
+    ports:
+    - 11004:5000
+    privileged: true
+    restart: always
+  netcat:
+    build: challenges/pwn/netcat/service/netcat
+    container_name: netcat
+    networks:
+    - netcat-network
+    ports:
+    - 11005:5000
+    privileged: true
+    restart: always
+  nginx:
+    build: challenges/web/Eat Flag Leh/service/service
+    container_name: nginx
+    networks:
+    - eatflagleh-network
+    ports:
+    - 9003:80
+    restart: always
+  noisyequations:
+    build: challenges/misc/noisy equations/service/dockerstuff
+    container_name: noisyequations
+    networks:
+    - noisyequations-network
+    ports:
+    - 8001:5000
+    restart: always
+
+  # php:
+  #   container_name: php
+  #   extends:
+  #     file: challenges/web/Baba Loves Pollution/service/docker-compose.yml
+  #     service: php
+  #   networks:
+  #   - babalovespollution-network
+  #   restart: always
+
+  ye_olde_radio:
+    build: challenges/crypto/ye olde radio/service/ye_olde_radio
+    container_name: ye_olde_radio
+    networks:
+    - yeolderadio-network
+    ports:
+    - 10000:1337
+    restart: always
+
+  kaboom:
+    build: challenges/misc/Kaboom/service/Kaboom Service
+    container_name: kaboom  
+    networks:
+    - kaboom-network
+    ports:
+    - 8002:323
+    restart: always

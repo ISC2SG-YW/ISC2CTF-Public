@@ -1,0 +1,10 @@
+services:
+  flask:
+    ports: !override
+     - "9001:5000"
+  graph-theory-website:
+    ports: !override
+      - "9002:3000"
+  formhub-website:
+    ports: !override
+      - "9004:5000"

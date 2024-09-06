@@ -9,3 +9,18 @@ PS. Competitive Programming questions can be found in misc :D
 - **Category:** web
 - **Difficulty:** hard
 
+
+## Hints
+None
+
+## Files
+- [Circuitous Vertex Enigma Distri.zip](dist\Circuitous Vertex Enigma Distri.zip)
+
+## Flags
+- `ISC2CTF{848@_HA735_GR4pH_7h30rY_:c}` (static)
+
+## Services
+| Service | Port | Type |
+| ------- | ---- | ---- |
+| [`graph-theory-admin-bot`](service\AdminBot) | 12345 | internal |
+| [`graph-theory-website`](service\Website) | 3000 | web |

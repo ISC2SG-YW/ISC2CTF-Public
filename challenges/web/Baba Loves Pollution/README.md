@@ -7,3 +7,19 @@ In fact, he loves pollution so much that he even made a website to advertise his
 - **Author:** Zhongbob
 - **Category:** web
 - **Difficulty:** easy
+
+
+## Hints
+None
+
+## Files
+- [Baba Loves Pollution Distri.zip](dist\Baba Loves Pollution Distri.zip)
+
+## Flags
+- `ISC2CTF{!_lOve_pOlLuTIoN_$0_MuCH!}` (static)
+
+## Services
+| Service | Port | Type |
+| ------- | ---- | ---- |
+| [`flask`](service\flask-src) | 5000 | web |
+| [`php`](service\php-src) | 483 | internal |

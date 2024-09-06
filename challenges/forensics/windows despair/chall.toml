@@ -1,0 +1,19 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "dalberrt"
+category = "forensics"
+description = "my friend james left his laptop here! let's see if we can login before he comes back :3\nZip Password: ISC2CTFForensicsChallengezAqWsXcDe"
+difficulty = "medium"
+name = "windows despair"
+files = ["https://drive.google.com/file/d/1mPuYAwxObMAj2mZ3AAUUiZMLf7JAdRqQ/view?usp=sharing"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{l1nUx_w0u1dNt_h@v_diS_isSu3}"
+case_sensitive = false

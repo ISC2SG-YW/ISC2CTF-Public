@@ -1,0 +1,21 @@
+# Used this docker-compose when testing my challenge
+# ran commands:
+# apt-get update
+# apt-get install gcc
+# apt-get install g++
+# gcc chall.cpp -o chall -O0 -Wno-format-security -Wl,-z,relro,-z,lazy -no-pie
+# ldd chall
+# <copy libc.so.6 and linker over to this directory>
+
+services:
+  ctf:
+    image: ubuntu:22.04@sha256:cb2af41f42b9c9bc9bcdc7cf1735e3c4b3d95b2137be86fd940373471a34c8b0
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/ctf
+    working_dir: /ctf
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - SYS_PTRACE

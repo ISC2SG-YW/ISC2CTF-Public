@@ -5,3 +5,18 @@ Baba went to visit the glorious nation of North Korea! However, while there, he 
 - **Author:** Zhongbob
 - **Category:** misc
 - **Difficulty:** easy
+
+
+## Hints
+None
+
+## Files
+- [challenge.docx](dist\challenge.docx)
+
+## Flags
+- `ISC2CTF{Ba8@_l0VeS_b1N4ry_5earcH}` (static)
+
+## Services
+| Service | Port | Type |
+| ------- | ---- | ---- |
+| [`baba-is-lost`](service\Baba is lost Service) | 12345 | nc |
